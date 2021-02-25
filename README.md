@@ -29,10 +29,10 @@ The classification objectives are:
 | Not Changed | 75.07% |
 | Job Changed | 24.93% |
 
-Target | Percentage of Data
------------- | -------------
-| Not Changed | 75.07% |
-| Job Changed | 24.93% |
+The target was imbalance. There are 2 ways of technique was used to balance the target:
+
+1. Setting the parameter "(class_weight='balanced')" for models which have it and their "random_state" parameter respectively.
+2. Using SMOTE oversampling method and setting the "random_state" parameter for models that don't have "class_weight" parameter
 
 ## Features Selection
 
