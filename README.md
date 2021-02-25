@@ -1,2 +1,3 @@
-# Prediction-Final-Project
-Final Project Purwadhika Jakarta Batch 11
+# Purwadhika Jakarta Batch 11 - William Andreas
+
+## HR Analytics: Job Change Prediction
