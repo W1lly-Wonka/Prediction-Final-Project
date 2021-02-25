@@ -21,6 +21,15 @@ The classification objectives are:
 3. Encode categorical columns of data to numerical using Binary Encoder, and ordinal columns of data to numerical using Ordinal Encoder
 4. Scale numerical column of data using RobustScaler.
 5. Generate polynomial and interaction features using PolynomialFeatures for numerical column of data after it's scaled
-6. 
-7. 
-8. 
+
+## Handling Imbalance Target
+
+| Target | Percentage of Data |
+|:-|:-:|
+| Not Changed | 75.07% |
+| Job Changed | 24.93 %|
+
+## Features Selection
+
+1. Using SelectPercentile in sklearn, the features of the data is automatically selected based on the percentile parameter.
+
