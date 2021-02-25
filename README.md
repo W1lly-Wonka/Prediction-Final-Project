@@ -31,8 +31,8 @@ The classification objectives are:
 
 Target | Percentage of Data
 ------------ | -------------
-Not Changed | 75.07%
-Job Changed | 24.93%
+| Not Changed | 75.07% |
+| Job Changed | 24.93% |
 
 ## Features Selection
 
