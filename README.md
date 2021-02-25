@@ -13,3 +13,9 @@ The data is related to an anonymous company that's dynamic in Big Data and Data 
 The classification objectives are:
 1. To predict whether or not candidates alter their occupations after they have completed their training.
 2. Help out the said company to reduce the cost and time as well as the quality of the courses and categorization of candidates by sorting out candidates that are false predicted (predicted not change their jobs while actually they are seeking out new employment).
+
+## Cleaning and Pre-Processing
+
+1. Drop rows containing ID and training hours of candidates.
+2. Encode categorical columns of data to numerical using Binary Encoder, and ordinal columns of data to numerical using Ordinal Encoder
+3. Scale numerical column of data using RobustScaler.
