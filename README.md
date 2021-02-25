@@ -17,10 +17,10 @@ The classification objectives are:
 ## Cleaning and Pre-Processing
 
 1. Drop rows containing ID and training hours of candidates.
-2. Impute missing values using their most frequent values
-3. Encode categorical columns of data to numerical using Binary Encoder, and ordinal columns of data to numerical using Ordinal Encoder
+2. Impute missing values using their most frequent values.
+3. Encode categorical columns of data to numerical using Binary Encoder, and ordinal columns of data to numerical using Ordinal Encoder.
 4. Scale numerical column of data using RobustScaler.
-5. Generate polynomial and interaction features using PolynomialFeatures for numerical column of data after it's scaled
+5. Generate polynomial and interaction features using PolynomialFeatures for numerical column of data after it's scaled.
 
 ## Modeling
 
@@ -34,7 +34,7 @@ The classification objectives are:
 The target was imbalance. There are 2 ways of technique was used to balance the target:
 
 1. Setting the parameter "(class_weight='balanced')" for models which have it and their "random_state" parameter respectively.
-2. Using SMOTE oversampling method and setting the "random_state" parameter for models that don't have "class_weight" parameter
+2. Using SMOTE oversampling method and setting the "random_state" parameter for models that don't have "class_weight" parameter.
 
 ### Features Selection
 
@@ -46,16 +46,16 @@ Using RepeatedStratifiedKFold and GridSearchCV to search over specified paramete
 
 | Model |  Before  | After |
 |:-:|:-:|:-:|
-| Logistic Regression | 0.6562537384936522 | 0.6520151250727168 |
-| Decision Tree Classifier | 0.49607733634466 | 0.6971000239537349 |
-| Random Forest Classifier | 0.454451699004209 | 0.6584037230948225 |
-| Support Vector Classifier | 0.6412097320603634 | 0.7144197720973205 |
-| Ada Boost Classifier | 0.576115936077747 | 0.580353865106252 |
-| Gradient Boosting Classifier | 0.582629572596927 | 0.6073269684837286 |
-| XGBoost Classifier | 0.5849321082708826 | 0.6120100263491086 |
-| K Nearest Classifier | 0.6506817917393835 | 0.5215583615645211 |
+| Logistic Regression | 0.656 | 0.652 |
+| Decision Tree Classifier | 0.496 | 0.697 |
+| Random Forest Classifier | 0.454 | 0.658 |
+| Support Vector Classifier | 0.641 | 0.714 |
+| Ada Boost Classifier | 0.576 | 0.580 |
+| Gradient Boosting Classifier | 0.582 | 0.607 |
+| XGBoost Classifier | 0.584 | 0.612 |
+| K Nearest Classifier | 0.650 | 0.521 |
 
-Based on the 'recall' score, and speed performance of models, the best model is the Decision Tree Classifier. After said model undergo hyperparameter tuning, the 'recall' score of said model is increasing dramatically, which became 0.81 when gets predicted to the X_test
+Based on the 'recall' score, and speed performance of models, the best model is the Decision Tree Classifier. After said model undergo hyperparameter tuning, the 'recall' score of said model is increasing dramatically, which became 0.81 when gets predicted to the X_test.
 
 #### Decision Tree Classifier Confusion Matrix
 
@@ -67,4 +67,12 @@ Based on the 'recall' score, and speed performance of models, the best model is 
 
 
 
+### Conclusions:
 
+1. The machine learning model is able to help the company to reduce the cost and save time by reducing candidates who are going to alter their occupations.
+2. The result might be able to be improved by having more data on candidates who are going to alter their occupations.
+
+### Business Insights:
+
+1. The company.
+2. The company.
