@@ -17,5 +17,10 @@ The classification objectives are:
 ## Cleaning and Pre-Processing
 
 1. Drop rows containing ID and training hours of candidates.
-2. Encode categorical columns of data to numerical using Binary Encoder, and ordinal columns of data to numerical using Ordinal Encoder
-3. Scale numerical column of data using RobustScaler.
+2. Impute missing values using their most frequent values
+3. Encode categorical columns of data to numerical using Binary Encoder, and ordinal columns of data to numerical using Ordinal Encoder
+4. Scale numerical column of data using RobustScaler.
+5. Generate polynomial and interaction features using PolynomialFeatures for numerical column of data after it's scaled
+6. 
+7. 
+8. 
