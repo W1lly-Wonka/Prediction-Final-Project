@@ -24,10 +24,15 @@ The classification objectives are:
 
 ## Handling Imbalance Target
 
-| Target | Percentage of Data |
+|  Target  | Percentage of Data |
 |:-|:-:|
 | Not Changed | 75.07% |
-| Job Changed | 24.93 %|
+| Job Changed | 24.93% |
+
+Target | Percentage of Data
+------------ | -------------
+Not Changed | 75.07%
+Job Changed | 24.93%
 
 ## Features Selection
 
