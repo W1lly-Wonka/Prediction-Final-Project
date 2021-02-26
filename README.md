@@ -59,7 +59,7 @@ Based on the 'recall' score, and speed performance of models, the best model is 
 
 #### Decision Tree Classifier Confusion Matrix
 
-##### Before Hyperparameter Tuning (already a tune model)
+##### Before Hyperparameter Tuning 
 
 ![DTC Default Confusion Matrix](https://raw.githubusercontent.com/W1lly-Wonka/Prediction-Final-Project/main/Visualizations/DTC%20Default%20Confusion%20Matrix.png "DTC Default Confusion Matrix")
 
