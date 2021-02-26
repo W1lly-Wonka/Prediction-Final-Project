@@ -82,3 +82,16 @@ Based on the 'recall' score, and speed performance of models, the best model is 
 * If their company type is from Pvt Ltd
 * If their last new job is just 1 year
 2. If the company's willing to keep certain individuals from altering their occupations, the focus should be more concerned about well beings of said individuals in order to reduce or eliminate the chance of that said individuals altering their occupations. The method works better for males, as they tend to provide for their families.
+
+
+### Dashboard
+
+![Visualization1](https://raw.githubusercontent.com/W1lly-Wonka/Prediction-Final-Project/main/Visualizations/employee%20attrition%20performance.png)
+
+![Visualization2](https://raw.githubusercontent.com/W1lly-Wonka/Prediction-Final-Project/main/Visualizations/employee%20attrition%20performance(1).png)
+
+![Visualization3](https://raw.githubusercontent.com/W1lly-Wonka/Prediction-Final-Project/main/Visualizations/employee%20attrition%20performance(2).png)
+
+![Visualization4](https://raw.githubusercontent.com/W1lly-Wonka/Prediction-Final-Project/main/Visualizations/Admission%20Prediction.png)
+
+# Thank you for reading my "very" simple project!
