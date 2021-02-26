@@ -61,11 +61,11 @@ Based on the 'recall' score, and speed performance of models, the best model is 
 
 ##### Before Hyperparameter Tuning (already a tune model)
 
-
+![Before](/Visualizations/DTC Default Confusion Matrix.png)
 
 ##### After Hyperparameter Tuning
 
-
+![After](/Visualizations/DTC Hyperparameter Tuniing Confusion Matrix.png)
 
 ### Conclusions:
 
