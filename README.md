@@ -74,7 +74,7 @@ Based on the 'recall' score, and speed performance of models, the best model is 
 
 ### Business Insights:
 
-1. The company should be aware of candidates from certain conditions, as they tend to alter their occupations, such as:
+1. The company should be aware of candidates from certain conditions, especially since they tend to alter their occupations, such as:
 * If they are from city_21 and city_103,
 * If they have relevant experience,
 * If their education level is graduate,
