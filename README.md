@@ -75,10 +75,10 @@ Based on the 'recall' score, and speed performance of models, the best model is 
 ### Business Insights:
 
 1. The company should be aware of candidates from certain conditions, as they tend to alter their occupations, such as:
-⋅⋅* If they are from city_21 and city_103,
-⋅⋅* If they have relevant experience,
-⋅⋅* If their education level is graduate,
-⋅⋅* If their major discipline is STEM
-⋅⋅* If their company type is from Pvt Ltd
-⋅⋅* If their last new job is just 1 year
+* If they are from city_21 and city_103,
+* If they have relevant experience,
+* If their education level is graduate,
+* If their major discipline is STEM
+* If their company type is from Pvt Ltd
+* If their last new job is just 1 year
 2. If the company's willing to keep certain individuals from altering their occupations, the focus should be more concerned about well beings of said individuals in order to reduce or eliminate the chance of that said individuals altering their occupations. The method works better for males, as they tend to provide for their families.
