@@ -61,11 +61,11 @@ Based on the 'recall' score, and speed performance of models, the best model is 
 
 ##### Before Hyperparameter Tuning 
 
-![DTC Default Confusion Matrix](https://raw.githubusercontent.com/W1lly-Wonka/Prediction-Final-Project/main/Visualizations/DTC%20Default%20Confusion%20Matrix.png "DTC Default Confusion Matrix")
+![DTC Default Confusion Matrix](./W1lly-Wonka/Prediction-Final-Project/main/Visualizations/DTC%20Default%20Confusion%20Matrix.png "DTC Default Confusion Matrix")
 
 ##### After Hyperparameter Tuning
 
-![DTC Hyperparameter Tuning Confusion Matrix](https://raw.githubusercontent.com/W1lly-Wonka/Prediction-Final-Project/main/Visualizations/DTC%20Hyperparameter%20Tuniing%20Confusion%20Matrix.png "DTC Hyperparameter Tuning Confusion Matrix")
+![DTC Hyperparameter Tuning Confusion Matrix](./W1lly-Wonka/Prediction-Final-Project/main/Visualizations/DTC%20Hyperparameter%20Tuniing%20Confusion%20Matrix.png "DTC Hyperparameter Tuning Confusion Matrix")
 
 ### Conclusions:
 
@@ -86,12 +86,12 @@ Based on the 'recall' score, and speed performance of models, the best model is 
 
 ### Dashboard
 
-![Visualization1](https://raw.githubusercontent.com/W1lly-Wonka/Prediction-Final-Project/main/Visualizations/employee%20attrition%20performance.png)
+![Visualization1](./W1lly-Wonka/Prediction-Final-Project/main/Visualizations/employee%20attrition%20performance.png)
 
-![Visualization2](https://raw.githubusercontent.com/W1lly-Wonka/Prediction-Final-Project/main/Visualizations/employee%20attrition%20performance(1).png)
+![Visualization2](./W1lly-Wonka/Prediction-Final-Project/main/Visualizations/employee%20attrition%20performance(1).png)
 
-![Visualization3](https://raw.githubusercontent.com/W1lly-Wonka/Prediction-Final-Project/main/Visualizations/employee%20attrition%20performance(2).png)
+![Visualization3](./W1lly-Wonka/Prediction-Final-Project/main/Visualizations/employee%20attrition%20performance(2).png)
 
-![Visualization4](https://raw.githubusercontent.com/W1lly-Wonka/Prediction-Final-Project/main/Visualizations/Admission%20Prediction.png)
+![Visualization4](./W1lly-Wonka/Prediction-Final-Project/main/Visualizations/Admission%20Prediction.png)
 
 # Thank you for reading my "very" simple project!
