@@ -61,11 +61,11 @@ Based on the 'recall' score, and speed performance of models, the best model is 
 
 ##### Before Hyperparameter Tuning 
 
-![DTC Default Confusion Matrix](./W1lly-Wonka/Prediction-Final-Project/main/Visualizations/DTC%20Default%20Confusion%20Matrix.png "DTC Default Confusion Matrix")
+![DTC Default Confusion Matrix](https://raw.githubusercontent.com/W1lly-Wonka/Prediction-Final-Project/main/Visualizations/DTC%20Default%20Confusion%20Matrix.png?token=ARP3RZSMYRJNFLEEZNLX4O3AHTPHM "DTC Default Confusion Matrix")
 
 ##### After Hyperparameter Tuning
 
-![DTC Hyperparameter Tuning Confusion Matrix](./W1lly-Wonka/Prediction-Final-Project/main/Visualizations/DTC%20Hyperparameter%20Tuniing%20Confusion%20Matrix.png "DTC Hyperparameter Tuning Confusion Matrix")
+![DTC Hyperparameter Tuning Confusion Matrix](https://raw.githubusercontent.com/W1lly-Wonka/Prediction-Final-Project/main/Visualizations/DTC%20Hyperparameter%20Tuniing%20Confusion%20Matrix.png?token=ARP3RZRHH73UV4K4NSBOX33AHTPJG "DTC Hyperparameter Tuning Confusion Matrix")
 
 ### Conclusions:
 
@@ -86,12 +86,12 @@ Based on the 'recall' score, and speed performance of models, the best model is 
 
 ### Dashboard
 
-![Visualization1](./W1lly-Wonka/Prediction-Final-Project/main/Visualizations/employee%20attrition%20performance.png)
+![Visualization1](https://raw.githubusercontent.com/W1lly-Wonka/Prediction-Final-Project/main/Visualizations/employee%20attrition%20performance.png?token=ARP3RZSWSTIPCPL34RAWGALAHTPEK)
 
-![Visualization2](./W1lly-Wonka/Prediction-Final-Project/main/Visualizations/employee%20attrition%20performance(1).png)
+![Visualization2](https://raw.githubusercontent.com/W1lly-Wonka/Prediction-Final-Project/main/Visualizations/employee%20attrition%20performance(1).png?token=ARP3RZXG444Y4UAKNAIIQSDAHTPCM)
 
-![Visualization3](./W1lly-Wonka/Prediction-Final-Project/main/Visualizations/employee%20attrition%20performance(2).png)
+![Visualization3](https://raw.githubusercontent.com/W1lly-Wonka/Prediction-Final-Project/main/Visualizations/employee%20attrition%20performance(2).png?token=ARP3RZX65MTIZVYGVNXA3TDAHTPBO)
 
-![Visualization4](./W1lly-Wonka/Prediction-Final-Project/main/Visualizations/Admission%20Prediction.png)
+![Visualization4](https://raw.githubusercontent.com/W1lly-Wonka/Prediction-Final-Project/main/Visualizations/Admission%20Prediction.png?token=ARP3RZR7T3Y7M6SVYRQMJNTAHTO6A)
 
 # Thank you for reading my "very" simple project!
