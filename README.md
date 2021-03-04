@@ -86,12 +86,28 @@ Based on the 'recall' score, and speed performance of models, the best model is 
 
 ### Dashboard
 
-![Visualization1](https://raw.githubusercontent.com/W1lly-Wonka/Prediction-Final-Project/main/Visualizations/employee%20attrition%20performance.png?token=ARP3RZSWSTIPCPL34RAWGALAHTPEK)
+#### Home
 
-![Visualization2](https://raw.githubusercontent.com/W1lly-Wonka/Prediction-Final-Project/main/Visualizations/employee%20attrition%20performance(1).png?token=ARP3RZXG444Y4UAKNAIIQSDAHTPCM)
+<img src='/Visualizations/Home.png'>
 
-![Visualization3](https://raw.githubusercontent.com/W1lly-Wonka/Prediction-Final-Project/main/Visualizations/employee%20attrition%20performance(2).png?token=ARP3RZX65MTIZVYGVNXA3TDAHTPBO)
+#### About
 
-![Visualization4](https://raw.githubusercontent.com/W1lly-Wonka/Prediction-Final-Project/main/Visualizations/Admission%20Prediction.png?token=ARP3RZR7T3Y7M6SVYRQMJNTAHTO6A)
+<img src='/Visualizations/About.png'>
+
+#### Database
+
+<img src='/Visualizations/Database.png'>
+
+#### Visualization
+
+<img src='/Visualizations/Visualization.png'>
+
+#### Prediction
+
+<img src='/Visualizations/Prediction.png'>
+
+#### Result
+
+<img src='/Visualizations/Result.png'>
 
 # Thank you for reading my "very" simple project!
