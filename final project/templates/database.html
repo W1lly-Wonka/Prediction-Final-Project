@@ -1,0 +1,272 @@
+{% extends 'index.html' %} {% block content %}
+<center>
+      <br>
+        <h3><b>HR Database</b></h3>
+          <p>Job Change Prediction</p>
+
+            <div class='table-bordered' style='overflow: auto; height: 350px; width: auto; margin:0 auto'>
+              <table>
+              {% for table in tables %}
+                {{ table|safe }}
+              {% endfor %}
+              </table>
+        </div>  
+<!-- 
+        <form method="POST" action="http://localhost:1500/result">
+          <br>
+          <h3><b>Do you want to rent or join as host airbnb?</b></h3>
+          <p>Please make sure you know the value of your property</p>
+          <br> 
+              <div class="input-group mb-3" style="width: 500px">
+                <span class="input-group-text" style="width: 500px">Region</span>
+                <select name='neighbourhood_cleansed' style="width: 250px" class="form-control" required="required">
+                  <option value='RoslindaleRos'>lindale</option>
+                  <option value='Jamaica Plain'>Jamaica Plain</option>
+                  <option value='Mission Hill'>Mission Hill</option>
+                  <option value='Longwood Medical Area'>Longwood Medical Area</option>
+                  <option value='Bay Village'>Bay Village</option>
+                  <option value='Leather District'>Leather District</option>
+                  <option value='Chinatown'>Chinatown</option>
+                  <option value='North End'>North End</option>
+                  <option value='Roxbury'>Roxbury</option>
+                  <option value='South End'>South End</option>
+                  <option value='Back Bay'>Back Bay</option>
+                  <option value='East Boston'>East Boston</option>
+                  <option value='Charlestown'>Charlestown</option>
+                  <option value='West End'>West End</option>
+                  <option value='Beacon Hill'>Beacon Hill</option>
+                  <option value='Downtown'>Downtown</option>
+                  <option value='Fenway'>Fenway</option>
+                  <option value='Brighton'>Brighton</option>
+                  <option value='West Roxbury'>West Roxbury</option>
+                  <option value='Hyde Park'>Hyde Park</option>
+                  <option value='Mattapan'>Mattapan</option>
+                  <option value='Dorchester'>Dorchester</option>
+                  <option value='South Boston Waterfront'>South Boston Waterfront</option>
+                  <option value='South Boston'>South Boston</option>
+                  <option value='Allston'>Allston</option>
+                  <option disabled selected hidden>Pick Region</option>
+                </select> 
+              </div>
+                      
+              <div class="input-group mb-3" style="width: 500px">
+                <span class="input-group-text" style="width: 500px">Type of Property</span>
+                  <select name="property_type" style="width: 250px" class="form-control" required="required">
+                    <option value="House">House</option>
+                    <option value="Apartment">Apartment</option>
+                    <option value="Other">Other.</option>
+                    <option disabled selected hidden>e.g Apartment, or House or other. </option>
+                  </select>     
+              </div>
+
+              <div class="input-group mb-3" style="width: 500px">
+                <span class="input-group-text" style="width: 500px">Type of Room</span>
+                <select name="room_type" style="width: 250px" class="form-control" required="required">
+                  <option value="Entire home/apt">Entire home/apt</option>
+                  <option value="Private room">Private room</option>
+                  <option value="Shared room">Shared room</option>
+                  <option disabled selected hidden>e.g Hotel room, or Private room, or Shared room</option>
+                </select>
+              </div>
+
+              <div class="input-group mb-3" style="width: 500px">
+                <span class="input-group-text" style="width: 500px">Number of Accommodates</span>
+                  <input type="number" name="accommodates" step="1" 
+                    min="1" max="16" style="width: 500px" id="accommodates 
+                    class="form-control" required=True placeholder="e.g.1-16"/>
+                  </select>
+              </div>
+
+              <div class="input-group mb-3" style="width: 500px">
+                <span class="input-group-text" style="width: 500px">Number of Bathrooms</span>
+                  <input type="number" name="bathrooms" step="1" 
+                    min="0" max="6" style="width: 500px" id="bathrooms" 
+                    class="form-control" required=True placeholder="e.g.0-6"/>
+                  </select>
+              </div>
+
+              <div class="input-group mb-3" style="width: 500px">
+                <span class="input-group-text" style="width: 500px">Instant Bookable</span>
+                  <select name="instant_bookable" style="width: 250px" class="form-control" required="required">
+                    <option value="t">Yes</option>
+                    <option value="f">No</option>
+                    <option disabled selected hidden>e.g Yes or No</option>
+                  </select>
+                </div>
+
+              <div class="input-group mb-3" style="width: 500px">
+                <span class="input-group-text" style="width: 500px">Number of Bedroom</span>
+                  <input type="number" name="bedrooms" step="1" 
+                    min="0" max="5" style="width: 500px" id="bedrooms" 
+                    class="form-control" required=True placeholder="e.g. 1-5"/>
+                  </select>
+              </div>
+
+              <div class="input-group mb-3" style="width: 500px">
+                <span class="input-group-text" style="width: 500px">Type of Bed</span>
+                  <select name="bed_type" style="width: 250px" class="form-control" required="required">
+                    <option value="Real Bed">Real Bed</option>
+                    <option value="Pull-out Sofa">Pull-out Sofa</option>
+                    <option value="Futon">Futon</option>
+                    <option value="Airbed">Airbed</option>
+                    <option value="Couch">Couch</option>
+                    <option disabled selected hidden>e.g Real bed,Airbed,or etc.</option>
+                  </select>     
+              </div>
+
+              <div class="input-group mb-3" style="width: 500px">
+                <span class="input-group-text" style="width: 500px">Number of Bed</span>
+                  <input type="number" name="beds" step="1" 
+                    min="0" max="16" style="width: 500px" id="beds" 
+                    class="form-control" required=True placeholder="e.g 0-16"/>
+                  </select>
+              </div>
+
+              <div class="input-group mb-3" style="width: 500px">
+                <span class="input-group-text" style="width: 500px">Cleaning Fee ($)</span>
+                  <input type="number" name="cleaning_fee" step="1" 
+                    min="0" max="300" style="width: 500px" id="cleaning_fee" 
+                    class="form-control" required=True placeholder="e.g 0-300"/>
+                  </select>
+              </div>
+
+              <div class="input-group mb-3" style="width: 500px">
+                <span class="input-group-text" style="width: 500px">Available Nights</span>
+                  <input type="number" name="availability_365" step="1" 
+                    min="0" max="356" style="width: 500px" id="availability_365" 
+                    class="form-control" required=True placeholder="e.g 1-365"/>
+                  </select>
+              </div>
+
+              <div class="input-group mb-3" style="width: 500px">
+                <span class="input-group-text" style="width: 500px">Guests Included</span>
+                  <input type="number" name="guests_included" step="1" 
+                    min="0" max="14" style="width: 500px" id="guests_included" 
+                    class="form-control" required=True placeholder="e.g 0-14"/>
+                  </select>
+              </div>
+
+              <div class="input-group mb-3" style="width: 500px">
+                <span class="input-group-text" style="width: 500px">Guest Fee ($)</span>
+                  <input type="number" name="extra_people" step="1" 
+                    min="0" max="200" style="width: 500px" id="extra_people" 
+                    class="form-control" required=True placeholder="e.g 0-200"/>
+                  </select>
+              </div>
+
+
+              <div class="input-group mb-3" style="width: 500px">
+                <span class="input-group-text" style="width: 500px">Minimum Nights</span>
+                  <input type="number" name="minimum_nights" step="1" 
+                    min="1" max="300" style="width: 500px" id="minimum_nights" 
+                    class="form-control" required=True placeholder="e.g 0-300"/>
+                  </select>
+              </div>
+
+              <div class="input-group mb-3" style="width: 500px">
+                <span class="input-group-text" style="width: 500px">Cancellation Policy</span>
+                  <select name="cancellation_policy" style="width: 250px" class="form-control" required="required">
+                    <option value="moderate">moderate</option>
+                    <option value="flexible">flexible</option>
+                    <option value="strict">strict</option>
+                    <option disabled selected hidden>e.g moderate, or flexible, or strict.</option>
+                  </select>     
+              </div>
+
+                <h4> Fasilitas :</h4>
+                
+              <div>
+                <label class="checkbox-inline">
+                  breakfast <input type="checkbox" name='breakfast' value="1"><input type='hidden' value='0' name='breakfast'>
+                </label>
+                
+                <label class="checkbox-inline">
+                  high_end_electronics <input type="checkbox" name='high_end_electronics' value=1><input type='hidden' value='0' name='high_end_electronics'>
+                </label>
+                
+                <label class="checkbox-inline">
+                  smoke_detector <input type="checkbox" name='smoke_detector' value="1"><input type='hidden' value='0' name='smoke_detector'>
+                </label>
+                
+                <label class="checkbox-inline">
+                  pets_allowed <input type="checkbox" name='pets_allowed' value="1"><input type='hidden' value='0' name='pets_allowed'>
+                </label>
+                <label class="checkbox-inline">
+                  secure <input type="checkbox" name='secure' value="1"><input type='hidden' value='0' name='secure'>
+                </label>
+              </div>
+              <div>
+                <label class="checkbox-inline">
+                  washing_machine <input type="checkbox" name='washing_machine' value="1"><input type='hidden' value='0' name='washing_machine'>
+                </label>
+                <label class="checkbox-inline">
+                  heating <input type="checkbox" name='heating' value="1"><input type='hidden' value='0' name='heating'>
+                </label>
+                <label class="checkbox-inline">
+                  Hot_Tub<input type="checkbox" name='Hot_Tub' value="1"><input type='hidden' value='0' name='Hot_Tub'>
+                </label>
+                <label class="checkbox-inline">
+                  hair_dryer<input type="checkbox" name='hair_dryer' value="1"><input type='hidden' value='0' name='hair_dryer'>
+                </label>
+                <label class="checkbox-inline">
+                  hangers<input type="checkbox" name='hangers' value="1"><input type='hidden' value='0' name='hangers'>
+                </label>
+              </div>
+            <div>
+                <label class="checkbox-inline">
+                  elevator <input type="checkbox" name='elevator' value="1"><input type='hidden' value='0' name='elevator'>
+                </label>
+                <label class="checkbox-inline">
+                  fire_extinguisher <input type="checkbox" name='fire_extinguisher' value="1"><input type='hidden' value='0' name='fire_extinguisher'>
+                </label>
+                <label class="checkbox-inline">
+                  gym <input type="checkbox" name='gym' value="1"><input type='hidden' value='0' name='gym'>
+                </label>
+                <label class="checkbox-inline">
+                  tv <input type="checkbox" name='tv' value="1"><input type='hidden' value='0' name='tv'>
+                </label>
+              </div>
+                <label class="checkbox-inline">
+                  kitchen <input type="checkbox" name='kitchen ' value="1"><input type='hidden' value='0' name='kitchen'>
+                </label>
+                <label class="checkbox-inline">
+                  workspace <input type="checkbox" name='workspace' value="1"><input type='hidden' value='0' name='workspace'>
+                </label>
+                <label class="checkbox-inline">
+                  room_key <input type="checkbox" name='room_key' value="1"><input type='hidden' value='0' name='room_key'>
+                </label>
+                <label class="checkbox-inline">
+                  pool <input type="checkbox" name='pool' value="1"><input type='hidden' value='0' name='pool'>
+                </label>
+              <div>
+                <label class="checkbox-inline">
+                  wheelchair_access <input type="checkbox" name='wheelchair_access' value="1"><input type='hidden' value='0' name='wheelchair_access'>
+                </label>
+                <label class="checkbox-inline">
+                  internet <input type="checkbox" name='internet' value="1"><input type='hidden' value='0' name='internet'>
+                </label>
+                <label class="checkbox-inline">
+                  firstAid_kit <input type="checkbox" name='firstAid_kit' value="1"><input type='hidden' value='0' name='firstAid_kit'>
+                </label>
+                
+                <label class="checkbox-inline">
+                  free_parking <input type="checkbox" name='free_parking' value="1"><input type='hidden' value='0' name='free_parking'>
+                </label>
+              </div>
+
+              <button type="submit" style="background-color: rgb(4,122,133); color: whitesmoke" class="btn btn-info btn-lg">Submit</button>
+          </form> -->
+        <br>
+    </center>
+    {% endblock %}
+
+</html>
+
+
+
+                  
+                  
+                  
+                  
+                    
+                

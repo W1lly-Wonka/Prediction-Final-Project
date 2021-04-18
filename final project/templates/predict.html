@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="scripts.js">
+	</script>
+	<link rel="stylesheet" href="styles.css">
+    <title>Admission Prediction</title>
+</head>
+
+<body style="background-image: url({{url_for('static',filename='predict.jpg')}});background-position: center;background-repeat: no-repeat;background-size: cover"> 
+    <!-- ;background-attachment: fixed -->
+    <!--  -->
+    
+    <!-- HEADING -->
+    <center><br>
+        <h2 class="display-4"><strong></strong> <span class="badge badge-secondary">Predictor</span></h2>
+        <br>
+    </center>
+
+    <div class="container-fluid"></div>
+        <center>
+        <form method="POST" action = "http://127.0.0.1:8000/result">
+
+            
+
+            <div class="input-group mb-3" style="width: 500px">
+                <span class="badge badge-secondary" style="width: 170px">City:</span>
+                <select name="cit" style="width: 250px" class="form-control" required="required">
+                <option value="city_103">city_103</option>
+                <option value="city_21">city_21</option>
+                <option value="city_16">city_16</option>
+                <option value="city_114">city_114</option>
+                <option value="city_160">city_160</option>
+                <option value="city_136">city_136</option>
+                <option value="city_67">city_67</option>
+                <option value="city_75">city_75</option>
+                <option value="city_102">city_102</option>
+                <option value="city_104">city_104</option>
+                <option disabled selected hidden>You're From</option>
+            </select>
+            </div>
+                                     
+<!--             
+        <h5><span class="badge badge-secondary" style="width: 500px">City : </span>
+            <input type="radio" id="city_103" name="cit" value="city_103">
+            <label for="city_103">city_103</label><br>
+            <input type="radio" id="city_40" name="cit" value="city_40">
+            <label for="city_40">city_21</label><br>
+            <input type="radio" id="city_21" name="cit" value="city_21">
+            <label for="city_21">city_21</label><br>
+            <input type="radio" id="city_115" name="cit" value="city_115">
+            <label for="city_115">city_115</label><br>
+            <input type="radio" id="city_162" name="cit" value="city_162">
+            <label for="city_162">city_162</label><br>
+            <input type="radio" id="city_176" name="cit" value="city_176">
+            <label for="city_176">city_176</label><br>
+            <input type="radio" id="city_160" name="cit" value="city_160">
+            <label for="city_160">city_160</label><br>
+            <input type="radio" id="city_46" name="cit" value="city_46">
+            <label for="city_46">city_46</label><br>
+            <input type="radio" id="city_61" name="cit" value="city_61">
+            <label for="city_61">city_61</label><br>
+            <input type="radio" id="city_114" name="cit" value="city_114">
+            <label for="city_114">city_114</label><br>
+            <input type="radio" id="city_13" name="cit" value="city_13">
+            <label for="city_13">city_13</label><br>
+            <input type="radio" id="city_159" name="cit" value="city_159">
+            <label for="city_159">city_159</label><br>
+            <input type="radio" id="city_102" name="cit" value="city_102">
+            <label for="city_102">city_102</label><br>
+            <input type="radio" id="city_67" name="cit" value="city_67">
+            <label for="city_67">city_67</label><br>
+            <input type="radio" id="city_100" name="cit" value="city_100">
+            <label for="city_100">city_100</label><br>
+            <input type="radio" id="city_16" name="cit" value="city_16">
+            <label for="city_16">city_16</label><br>
+            <input type="radio" id="city_71" name="cit" value="city_71">
+            <label for="city_71">city_71</label><br>
+            <input type="radio" id="city_104" name="cit" value="city_104">
+            <label for="city_104">city_104</label><br>
+            <input type="radio" id="city_64" name="cit" value="city_64">
+            <label for="city_64">city_64</label><br>
+            <input type="radio" id="city_101" name="cit" value="city_101">
+            <label for="city_101">city_101</label><br>
+            <input type="radio" id="city_83" name="cit" value="city_83">
+            <label for="city_83">city_83</label><br>
+            <input type="radio" id="city_105" name="cit" value="city_105">
+            <label for="city_105">city_105</label><br>
+            <input type="radio" id="city_73" name="cit" value="city_73">
+            <label for="city_73">city_73</label><br>
+            <input type="radio" id="city_75" name="cit" value="city_75">
+            <label for="city_75">city_75</label><br>
+            <input type="radio" id="city_41" name="cit" value="city_41">
+            <label for="city_41">city_41</label><br>
+            <input type="radio" id="city_11" name="cit" value="city_11">
+            <label for="city_11">city_11</label><br>
+            <input type="radio" id="city_93" name="cit" value="city_93">
+            <label for="city_93">city_93</label><br>
+            <input type="radio" id="city_90" name="cit" value="city_90">
+            <label for="city_90">city_90</label><br>
+            <input type="radio" id="city_36" name="cit" value="city_36">
+            <label for="city_36">city_36</label><br>
+            <input type="radio" id="city_20" name="cit" value="city_20">
+            <label for="city_20">city_20</label><br>
+            <input type="radio" id="city_57" name="cit" value="city_57">
+            <label for="city_57">city_57</label>
+        </h5> -->
+
+
+        <!-- <h5><span class="badge badge-secondary">city_development_index</span>    
+            <input type="number" name="citdev" step="0.000001" min="0.448000" max="0.949000" placeholder="Input city_development_index" required/></h5> -->
+
+            <div class="input-group mb-3" style="width: 500px">
+                <span class="badge badge-secondary" style="width: 170px">Gender:</span>
+                <select name="gen" style="width: 250px" class="form-control" required="required">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option disabled selected hidden>Your Gender Is </option>
+            </select>
+            </div>
+
+        <!-- <h5><span class="badge badge-secondary">gender</span>
+            <input type="radio" id="Male" name="gen" value="Male">
+            <label for="Male">Male</label><br>
+            <input type="radio" id="Female" name="gen" value="Female">
+            <label for="Female">Female</label></h5> -->
+            
+            <div class="input-group mb-3" style="width: 500px">
+                <span class="badge badge-secondary" style="width: 170px">Relevant Experience:</span>
+                <select name="rel" style="width: 250px" class="form-control" required="required">
+                <option value="Has relevent experience">Has relevant experience</option>
+                <option value="No relevent experience">No relevant experience</option>
+                <option disabled selected hidden>Do You?</option>
+            </select>
+            </div>
+
+        <!-- <h5><span class="badge badge-secondary">relevent_experience</span>
+            <input type="radio" id="Has relevent experience" name="rel" value="Has relevent experience">
+            <label for="Has relevent experience">Has relevent experience</label><br>
+            <input type="radio" id="No relevent experience" name="rel" value="No relevent experience">
+            <label for="No relevent experience">No relevent experience</label></h5> -->
+
+            <div class="input-group mb-3" style="width: 500px">
+                <span class="badge badge-secondary" style="width: 170px">Enrolled University:</span>
+                <select name="enrol" style="width: 250px" class="form-control" required="required">
+                <option value="no_enrollment">No Enrollment</option>
+                <option value="Part time course">Part Time Course</option>
+                <option value="Full time course">Full Time Course</option>
+                <option disabled selected hidden>Your Status Is</option>
+            </select>
+            </div>
+
+        <!-- <h5><span class="badge badge-secondary">enrolled_university</span>
+            <input type="radio" id="no_enrollment" name="enrol" value="no_enrollment">
+            <label for="no_enrollment">no_enrollment</label><br>
+            <input type="radio" id="Full time course" name="enrol" value="Full time course">
+            <label for="Full time course">Full time course</label><br>
+            <input type="radio" id="Part time course" name="enrol" value="Part time course">
+            <label for="Part time course">Part time course</label></h5> -->
+
+            <div class="input-group mb-3" style="width: 500px">
+                <span class="badge badge-secondary" style="width: 170px">Education Level:</span>
+                <select name="ed" style="width: 250px" class="form-control" required="required">
+                <option value="Primary School">Primary School</option>
+                <option value="High School">High School</option>
+                <option value="Graduate">Graduate</option>
+                <option value="Masters">Masters</option>
+                <option value="Phd">Phd</option>
+                <option disabled selected hidden>Your Level of Education is</option>
+            </select>
+            </div>
+
+        <!-- <h5><span class="badge badge-secondary">education_level</span>
+            <input type="radio" id="Graduate" name="ed" value="Graduate">
+            <label for="Graduate">Graduate</label><br>
+            <input type="radio" id="Masters" name="ed" value="Masters">
+            <label for="Masters">Masters</label><br>
+            <input type="radio" id="High School" name="ed" value="High School">
+            <label for="High School">High School</label><br>
+            <input type="radio" id="Phd" name="ed" value="Phd">
+            <label for="Phd">Phd</label><br>
+            <input type="radio" id="Primary School" name="ed" value="Primary School">
+            <label for="Primary School">Primary School</label></h5> -->
+
+            <div class="input-group mb-3" style="width: 500px">
+                <span class="badge badge-secondary" style="width: 170px">Major Discipline:</span>
+                <select name="maj" style="width: 250px" class="form-control" required="required">
+                <option value="No Major">No Major</option>
+                <option value="Arts">Arts</option>
+                <option value="Business Degree">Business Degree</option>
+                <option value="Other">Other</option>
+                <option value="Humanities">Humanities</option>
+                <option value="STEM">STEM</option>
+                <option disabled selected hidden>Your Major Discipline is</option>
+            </select>
+            </div>
+<!--               
+        <h5><span class="badge badge-secondary">major_discipline</span>
+            <input type="radio" id="STEM" name="maj" value="STEM">
+            <label for="STEM">STEM</label><br>
+            <input type="radio" id="Business Degree" name="maj" value="Business Degree">
+            <label for="Business Degree">Business Degree</label><br>
+            <input type="radio" id="Arts" name="maj" value="Arts">
+            <label for="Arts">Arts</label><br>
+            <input type="radio" id="Humanities" name="maj" value="Humanities">
+            <label for="Humanities">Humanities</label><br>
+            <input type="radio" id="Other" name="maj" value="Other">
+            <label for="Other">Other</label><br>
+            <input type="radio" id="No Major" name="maj" value="No Major">
+            <label for="No Major">No Major</label></h5> -->
+
+            <div class="input-group mb-3" style="width: 500px">
+                <span class="badge badge-secondary" style="width: 170px">Experience:</span>
+                <select name="exp" style="width: 250px" class="form-control" required="required">
+                <option value="<1"> Less than 1</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value=">20">More than 20</option>
+                <option disabled selected hidden>Your Experience is in (year(s))</option> 
+            </select>
+            </div>
+
+        <!-- <h5><span class="badge badge-secondary">experience</span>
+            <input type="radio" id=">20" name="exp" value=">20">
+            <label for=">20">>20</label><br>
+            <input type="radio" id="15" name="exp" value="15">
+            <label for="15">15</label><br>
+            <input type="radio" id="5" name="exp" value="5">
+            <label for="5">5</label><br>
+            <input type="radio" id="<1" name="exp" value="<1">
+            <label for="<1"><1</label><br>
+            <input type="radio" id="11" name="exp" value="11">
+            <label for="11">11</label><br>
+            <input type="radio" id="13" name="exp" value="13">
+            <label for="13">13</label></h5> -->
+
+            <div class="input-group mb-3" style="width: 500px">
+                <span class="badge badge-secondary" style="width: 170px">Company Size:</span>
+                <select name="size" style="width: 250px" class="form-control" required="required">
+                <option value="<10">Less than 10</option>
+                <option value="10-49">10-49</option>
+                <option value="50-99">50-99</option>
+                <option value="100-500">100-500</option>
+                <option value="500-999">500-999</option>
+                <option value="1000-4999">1000-4999</option>
+                <option value="5000-9999">5000-9999</option>
+                <option value="10000+">More than 10000</option>
+                <option disabled selected hidden>Your Previous Company Size is</option>
+            </select>
+            </div>
+
+        <!-- <h5><span class="badge badge-secondary">company_size</span>
+            <input type="radio" id="50-99" name="size" value="50-99">
+            <label for="50-99">50-99</label><br>
+            <input type="radio" id="<10" name="size" value="<10">
+            <label for="<10"><10</label><br>
+            <input type="radio" id="10000+" name="size" value="10000+">
+            <label for="10000+">10000+</label><br>
+            <input type="radio" id="5000-9999" name="size" value="5000-9999">
+            <label for="5000-9999">5000-9999</label><br>
+            <input type="radio" id="1000-4999" name="size" value="1000-4999">
+            <label for="1000-4999">1000-4999</label><br>
+            <input type="radio" id="10-49" name="size" value="10-49">
+            <label for="10-49">10-49</label><br>
+            <input type="radio" id="100-500" name="size" value="100-500">
+            <label for="100-500">100-500</label><br>
+            <input type="radio" id="500-999" name="size" value="500-999">
+            <label for="500-999">500-999</label></h5> -->
+
+            <div class="input-group mb-3" style="width: 500px">
+                <span class="badge badge-secondary" style="width: 170px">Company Type:</span>
+                <select name="tipe" style="width: 250px" class="form-control" required="required">
+                <option value="Other">Other</option>
+                <option value="NGO">Non-Governmental Organization</option>
+                <option value="Early Stage Startup">Early Stage Startup</option>
+                <option value="Public Sector">Public Sector</option>
+                <option value="Funded Startup">Funded Startup</option>
+                <option value="Pvt Ltd">Private Limited</option>
+                <option disabled selected hidden>Your Previous Company Type is</option>
+            </select>
+            </div>
+
+        <!-- <h5><span class="badge badge-secondary">company_type</span>
+            <input type="radio" id="Pvt Ltd" name="tipe" value="Pvt Ltd">
+            <label for="Pvt Ltd">Pvt Ltd</label><br>
+            <input type="radio" id="Funded Startup" name="tipe" value="Funded Startup">
+            <label for="Funded Startup">Funded Startup</label><br>
+            <input type="radio" id="Early Stage Startup" name="tipe" value="Early Stage Startup">
+            <label for="Early Stage Startup">Early Stage Startup</label><br>
+            <input type="radio" id="Other" name="tipe" value="Other">
+            <label for="Other">Other</label><br>
+            <input type="radio" id="Public Sector" name="tipe" value="Public Sector">
+            <label for="Public Sector">Public Sector</label><br>
+            <input type="radio" id="NGO" name="tipe" value="NGO">
+            <label for="NGO">NGO</label><br></h5> -->
+
+            <div class="input-group mb-3" style="width: 500px">
+                <span class="badge badge-secondary" style="width: 170px">Last New Job:</span>
+                <select name="last" style="width: 250px" class="form-control" required="required">
+                <option value="never">Never</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value=">4">More than 4</option>
+                <option disabled selected hidden>Your Previous Company Type is</option>
+            </select>
+            </div>
+
+            <!-- 250 -->
+
+            <div class="row" style="width: 500px">
+                <div class="col-md-6" style="width: 170px">
+                    <label for="city_development_index">City Development Index : </label>
+                    <input type="number" name="citdev" step="0.000001" min="0.448000" max="0.949000" style="width: 250px" id="city_development_index" class="form-control" placeholder="0.448000 - 0.949000" required=True/>
+                </div>
+            </div>
+
+
+        <!-- <h5><span class="badge badge-secondary">last_new_job</span>
+            <input type="radio" id="1" name="last" value="1">
+            <label for="1">1</label><br>
+            <input type="radio" id=">4" name="last" value=">4">
+            <label for=">4">>4</label><br>
+            <input type="radio" id="never" name="last" value="never">
+            <label for="never">never</label><br>
+            <input type="radio" id="4" name="last" value="4">
+            <label for="4">4</label><br>
+            <input type="radio" id="3" name="last" value="3">
+            <label for="3">3</label><br>
+            <input type="radio" id="2" name="last" value="2">
+            <label for="2">2</label><br></h5> -->
+            
+            
+        <!-- <h5><span class="badge badge-secondary">TOEFL Score</span>
+            <input type="number" name="tf" step="1" min="92" max="120" placeholder="Type your TOEFL Score" required/></h5>
+
+        <h5><span class="badge badge-secondary">University Rating</span>
+            <input type="number" name="ur" step="1" min="1" max="5" placeholder="Type your Universtiy Rating" required/></h5>
+        
+        <h5><span class="badge badge-secondary">SOP</span>
+            <input type="number" name="sp" step="1" min="1" max="5" placeholder="Type your SOP Score" required/></h5>  -->
+<!-- 
+        <h5><span class="badge badge-secondary">LOR</span>
+            <input type="number" name="lr" step="1" min="1" max="5" placeholder="Type your LOR Score" required/></h5>
+
+        <h5><span class="badge badge-secondary">CGPA</span>
+            <input type="number" name="gp" step="0.1" min="6.8" max="9.92" placeholder="Type your CGPA Score" required/></h5>  -->
+
+        <!-- <h5><span class="badge badge-secondary">Research</span>
+            <input type="number" name="rs" step="1" min="0" max="1" placeholder="Type your Research Score" required/></h5> -->
+
+        <br><br>
+        <button style="height:45px;width:150px;font-size: 20px;text-align: center;line-height: 20px;background-color:#2a7886; color: cornsilk; type="button" class="btn btn-info">Let's Predict</button>
+        </form><br>
+        </center>
+    </div>
+    <br>
+
+    <!-- Log Out -->
+    <center>
+        <form action = "http://127.0.0.1:8000">
+        <button style="height:45px;width:150 px;font-size: 20px;text-align: center;line-height: 20px; background-color: #f50101;color: cornsilk;  type="button" class="btn btn-info"">Home</button>
+        </form><br><br>
+    </center>
+    
+    <!--JavaScript at end of body for optimized loading-->
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+     <script type="text/javascript" src="js/materialize.min.js"></script>
+
+</body>
+</html>
